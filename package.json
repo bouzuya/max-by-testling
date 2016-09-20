@@ -1,0 +1,36 @@
+{
+  "name": "max-by",
+  "description": "testling quick start",
+  "version": "1.0.0",
+  "author": "bouzuya <m@bouzuya.net> (http://bouzuya.net/)",
+  "devDependencies": {
+    "browserify": "^13.1.0",
+    "phantomjs": "^2.1.7",
+    "tape": "^4.6.0",
+    "testling": "^1.7.1"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "run-testling": "browserify test/*.js | testling",
+    "test": "tape test/*.js"
+  },
+  "testling": {
+    "files": "test/*.js",
+    "browsers": [
+      "ie/6..latest",
+      "chrome/22..latest",
+      "firefox/16..latest",
+      "safari/latest",
+      "opera/11.0..latest",
+      "iphone/6",
+      "ipad/6",
+      "android-browser/latest"
+    ]
+  }
+}
